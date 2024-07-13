@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: network
+  servlet:
+    multipart:
+      max-file-size: 50MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/network
+    username: admin
+    password: admin
+    hikari:
+      allow-pool-suspension: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+  mail:
+    host: localhost
+    port: 1025
+    username: admin
+    password: admin
+    properties:
+      mail:
+        smtp:
+          trust: "*"
+        auth: true
+        starttls:
+          enable: true
+        connectiontimeout: 5000
+        timeout: 3000
+        writetimeout: 5000
+springdoc:
+  default-produces-media-type: application/json
+server:
+  servlet:
+    context-path: /api/v1/
+  port: 8080
