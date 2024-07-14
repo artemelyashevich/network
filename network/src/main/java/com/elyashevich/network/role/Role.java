@@ -1,6 +1,6 @@
 package com.elyashevich.network.role;
 
-import com.elyashevich.network.user.User;
+import com.elyashevich.network.user.entity.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

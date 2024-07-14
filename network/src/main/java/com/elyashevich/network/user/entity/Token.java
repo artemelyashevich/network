@@ -1,4 +1,4 @@
-package com.elyashevich.network.user;
+package com.elyashevich.network.user.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -26,7 +26,7 @@ public class Token {
     @GeneratedValue
     private Integer id;
 
-    @Column
+    @Column(unique = true)
     private String token;
 
     @Column

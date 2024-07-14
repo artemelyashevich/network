@@ -21,15 +21,15 @@ spring:
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
   mail:
-    host: localhost
-    port: 1025
+    host: 127.0.0.1
+    port: 8081
     username: admin
     password: admin
     properties:
       mail:
         smtp:
           trust: "*"
-        auth: true
+        auth: false
         starttls:
           enable: true
         connectiontimeout: 5000
@@ -47,3 +47,6 @@ application:
     jwt:
       secret-key: 8558cd944ed6517716974f8481d2674035d6c24e3503a201dc7170b8e9963c89
       expiration: 8640000
+  mail:
+    frontend:
+      activation-url: http://localhost:3000/activate-account

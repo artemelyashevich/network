@@ -1,4 +1,4 @@
-package com.elyashevich.network.user;
+package com.elyashevich.network.user.entity;
 
 import com.elyashevich.network.role.Role;
 import jakarta.persistence.*;
@@ -41,14 +41,14 @@ public class User implements UserDetails, Principal {
     @Column
     private String lastName;
 
-    @Column
-    private LocalDate dateOfBirth;
-
     @Column(unique = true)
     private String email;
 
     @Column
     private String password;
+
+    @Column
+    private LocalDate dateOfBirth;
 
     @Column
     private boolean accountLocked;
@@ -114,7 +114,7 @@ public class User implements UserDetails, Principal {
         return enabled;
     }
 
-    private String getFullName() {
+    public String getFullName() {
         return firstName + " " + lastName;
     }
 }

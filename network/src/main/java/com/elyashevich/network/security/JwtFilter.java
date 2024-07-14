@@ -1,6 +1,5 @@
 package com.elyashevich.network.security;
 
-import com.elyashevich.network.user.UserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

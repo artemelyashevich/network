@@ -1,6 +1,6 @@
 package com.elyashevich.network.security;
 
-import com.elyashevich.network.user.UserRepository;
+import com.elyashevich.network.user.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;

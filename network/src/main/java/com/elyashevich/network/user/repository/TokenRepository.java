@@ -1,5 +1,6 @@
-package com.elyashevich.network.user;
+package com.elyashevich.network.user.repository;
 
+import com.elyashevich.network.user.entity.Token;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
